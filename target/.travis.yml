@@ -16,5 +16,5 @@ notifications:
   email:
     recipients:
       - fathullo-98@mail.ru
-    on_success: never # default: change
+    on_success: never # default: chang
     on_failure: always # default: always
