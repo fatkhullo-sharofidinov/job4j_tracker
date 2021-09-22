@@ -15,6 +15,6 @@ after_success:
 notifications:
   email:
     recipients:
-      - fathullo-98@mail.ru
+      - ishkamov@mail.ru
     on_success: never # default: change
     on_failure: always # default: always
