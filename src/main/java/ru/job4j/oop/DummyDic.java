@@ -1,6 +1,5 @@
 package ru.job4j.oop;
 
-import java.util.regex.PatternSyntaxException;
 
 public class DummyDic {
     public String engToRus(String eng) {
