@@ -11,22 +11,19 @@ public class Library {
         books[1] = banana;
         books[2] = fruits;
         books[3] = cleancode;
-        for (int index = 0; index < books.length; index++ ) {
-            Book bk = books[index];
+        for (Book bk : books) {
             System.out.println(bk.getBooksname() + " - " + bk.getPages());
         }
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
         System.out.println("After replacement: ");
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bk : books) {
             System.out.println(bk.getBooksname() + " - " + bk.getPages());
         }
         System.out.println("Clean code elements: ");
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
-            if (bk.getBooksname().equals("Clean code")) {
+        for (Book bk : books) {
+            if ("Clean code".equals(bk.getBooksname())) {
                 System.out.println(bk.getBooksname() + " - " + bk.getPages());
             }
         }
