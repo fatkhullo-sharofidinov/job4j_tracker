@@ -34,18 +34,18 @@ public class Tracker {
                 size++;
             }
         }
-        return itemWhithoutNull = Arrays.copyOf(itemWhithoutNull, size);
+        return Arrays.copyOf(itemWhithoutNull, size);
     }
 
     public Item[] findByName(String key) {
         Item[] itemEquals = new Item[items.length];
         int size = 0;
         for (int i = 0; i < items.length; i++ ) {
-            if (key.equals(items[i])) {
+            if (items[i] != null && key.equals(items[i].getName())) {
                 itemEquals[size] = items[i];
                 size++;
             }
         }
-        return itemEquals = Arrays.copyOf(itemEquals, size);
+        return Arrays.copyOf(itemEquals, size);
     }
 }
