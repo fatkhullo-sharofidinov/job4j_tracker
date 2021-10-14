@@ -1,4 +1,6 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.userLoginPassword;
+
+import ru.job4j.tracker.userLoginPassword.User;
 
 public class UserStore {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package ru.job4j.tracker;
+package ru.job4j.tracker.transport;
 
-public class Bus implements Transport{
+public class Bus implements Transport {
     @Override
     public void drive() {
         System.out.println("Transport is drive.");
