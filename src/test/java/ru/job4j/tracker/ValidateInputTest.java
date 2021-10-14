@@ -29,13 +29,14 @@ public class ValidateInputTest {
         assertThat(selected, is(6));
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void whenInvalidInput3() {
         Output out = new StubOutput();
         Input in = new StubInput(
-                new String[] {"-1"}
+                new String[] {"vf", "-1"}
         );
         ValidateInput input = new ValidateInput(out, in);
-        input.askInt("Enter menu:");
+       int selected = input.askInt("Enter menu:");
+        assertThat(selected, is(-1));
     }
 }
