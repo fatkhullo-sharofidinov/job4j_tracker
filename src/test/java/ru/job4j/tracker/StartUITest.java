@@ -71,7 +71,7 @@ public class StartUITest {
                 "Menu:" + ln
                         + "0. Exit Program" + ln
                         + "Wrong input, you can select: 0 .. 0" + ln
-                        + "Menu." + ln
+                        + "Menu:" + ln
                         + "0. Exit Program" + ln
                 )
         );
