@@ -40,6 +40,7 @@ public class ValidateInputTest {
         assertThat(selected, is(6));
     }
 
+
     @Test
     public void whenInvalidInput4() {
         Output out = new StubOutput();
