@@ -37,5 +37,8 @@ public class StartUI {
                     new ReplaceAction(output), new ExitProgrammAction()
             };
             new StartUI(output).init(input, tracker, actions);
+        Log4File log = Log4File.getInstance();
+        log.add("add new Item");
+        log.save();
     }
 }

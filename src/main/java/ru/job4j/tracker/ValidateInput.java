@@ -25,6 +25,9 @@ public class ValidateInput implements Input{
                     invalid = false;
                 } catch (NumberFormatException nfe) {
                     out.println("Please enter validate data again.");
+                } catch (ArrayIndexOutOfBoundsException aiobe) {
+                    invalid = false;
+                    out.println("Index in out of bounds.");
                 }
             } while (invalid);
         return value;
