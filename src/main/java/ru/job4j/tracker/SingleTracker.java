@@ -22,11 +22,11 @@ public final class SingleTracker {
         return tracker.findById(id);
     }
 
-    public Item[] findAll(Item[] item) {
+    public Item[] findAll() {
         return tracker.findAll();
     }
 
-    public Item[] findByName(Item[] item, String key) {
+    public Item[] findByName(String key) {
         return tracker.findByName(key);
     }
 
