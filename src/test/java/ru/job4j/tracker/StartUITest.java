@@ -22,6 +22,7 @@ public class StartUITest {
         assertThat(tracker.findAll()[0].getName(), is("Item name"));
     }
 
+
     @Test
     public void whenReplaceItem() {
         Output out = new StubOutput();
@@ -38,6 +39,7 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(tracker.findById(item.getId()).getName(), is(replacedName));
     }
+
 
     @Test
     public void whenDeleteItem() {
