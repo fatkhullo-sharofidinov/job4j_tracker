@@ -11,8 +11,10 @@ public class ConvertList2Array {
             if (row < groups) {
                     array[row][cell++] = num;
                     if (cell == cells) {
+
                     row++;
                     cell = 0;
+
                 }
             }
         }
